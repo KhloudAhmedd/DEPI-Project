@@ -1,0 +1,76 @@
+<section class="project py-5" id="projects">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-11 text-center mx-auto col-12">
+
+                <div class="col-lg-8 mx-auto">
+                    <h2>My Recent Projects</h2>
+                    <p class="text-center">Some Projects I've done for My Clients.</p>
+                </div>
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div *ngFor="let item of items; let i = index" class="carousel-item" [class.active]="i === 0">
+                            <img [src]="item.image" class="d-block w-100">
+                            <p>{{ item.description }}</p>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12 text-center mx-auto col-12">
+                    <h3>Some Mini Projects</h3>
+                    <p class="text-center">Some Mini Projects I've done.</p>
+                    <div class="row mt-3">
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="/miniProjects/claculator.png" alt="Calculator App Image" loading="lazy"> <!-- Lazy Loading of Images so images load only when they are about to be visible, improving scroll performance and reducing the initial load time. -->
+                                <div class="card-body">
+                                    <h5 class="card-title">Calculator App</h5>
+                                    <p class="card-text">Made using HTML, CSS and JavScript for practice.</p>
+                                    <a href="https://khloudahmedd.github.io/Calculator/" target="_blank" class="custom-btn">Check it out!</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="/miniProjects/loginForm.png" alt="Logiyn Form Image" loading="lazy">
+                                <div class="card-body">
+                                    <h5 class="card-title">Login Form</h5>
+                                    <p class="card-text">Made using HTML, CSS and Bootstrap for practice.</p>
+                                    <a href="https://khloudahmedd.github.io/LoginForm/" target="_blank" class="custom-btn">Check it out!</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card h-100">
+                                <img class="card-img-top" src="/miniProjects/gummy-abacus.png" alt="Characters Counter Image" loading="lazy">
+                                <div class="card-body">
+                                    <h5 class="card-title">Characters Counter</h5>
+                                    <p class="card-text">Made using HTML, CSS and JavScript for practice.</p>
+                                    <a href="https://khloudahmedd.github.io/Characters-counter/" target="_blank" class="custom-btn">Check it out!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
